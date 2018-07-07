@@ -1,0 +1,460 @@
+/* CSS Document */
+@import url( ../font/font01/LCDN.css);
+/*@import url(screenTest.css);*/
+html {
+	font-size: 40px;
+}
+.bgColor {
+	background-color: #0e1b37;
+}
+.logo_txt {
+	text-align: center;
+	height: 300px;
+	font-size: 3rem;
+}
+.map_area {
+	width: 3064px;
+	height: 2373px;
+	background: url(../images/web/map_wh.png) no-repeat;
+}
+.bubbleFrame01 {
+	width: 1410px;
+	height: 595px;
+	padding: 2.5rem 2rem;
+	line-height: 180%;
+	box-sizing: border-box;
+	background: url(../images/web/bubbleFrame01.png) no-repeat;
+}
+/*左边装饰条*/
+.decoratePic_left01, .decoratePic_left03 {
+	position: absolute;
+	left: 0;
+	width: 4826px;
+	height: 200px;
+	background: url(../images/web/decoratePic_left.png) no-repeat;
+	pointer-events: none;
+}
+.decoratePic_left01 {
+	top: 0;
+}
+.decoratePic_left03 {
+	bottom: 0;
+	background-position: left bottom;
+}
+/*右边装饰条*/
+.decoratePic_right01, .decoratePic_right03 {
+	position: absolute;
+	right: 0;
+	width: 4826px;
+	height: 200px;
+	background: url(../images/web/decoratePic_right.png) no-repeat;
+	pointer-events: none;
+}
+.decoratePic_right01 {
+	top: 0;
+}
+.decoratePic_right03 {
+	bottom: 0;
+	background-position: right bottom;
+}
+/*左右中间自适应装饰条*/
+.decoratePic_left02 {
+	left: 0px;
+}
+.decoratePic_right02 {
+	right: 0px;
+}
+.decoratePic_left02, .decoratePic_right02 {
+	position: absolute;
+	width: 67px;
+	top: 200px;
+	bottom: 200px;
+	background: url(../images/web/decorateLine_y.png) repeat-y;
+	pointer-events: none;
+}
+.decoratePic_bottom {
+	position: absolute;
+	height: 673px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../images/web/decorate_bottomBg.png) no-repeat center bottom;
+	pointer-events: none;
+}
+/*中间底部装饰背景*/
+.waveBg01 {
+	position: absolute;
+	pointer-events: none;
+	height: 1895px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../images/web/waveBg01.png) no-repeat center bottom;
+}
+/*左边模块区域*/
+.mod_title {
+	font-size: 1.75rem;
+}
+.module01_content {
+	padding: 1rem;
+}
+.cutLine_mod {
+	width: 3061px;
+	height: 90px;
+	background: url(../images/web/spotLine.png) no-repeat;
+}
+/*状态点css*/
+.chartState p{
+	padding-left: 1.5rem;
+	margin-right: 0.5rem;
+	position: relative;
+}
+.statePt01,.statePt02,.statePt03{
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #00b0ff;
+	position: absolute;
+	left: 0.2rem;
+	top: 0.2rem;
+	pointer-events: none;
+}
+.statePt02{
+	background-color: #31c28a;
+}
+.statePt03{
+	background-color: #e57d3f;
+}
+
+/*右边模块区域*/
+.rowArea {
+	height: 600px;
+}
+.mod_title02 {
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+.module02_content {
+	padding: 1rem;
+	margin-right: 2rem;
+	height: 1970px;
+	width: 800px;
+	background-color: rgba(15,55,125,0.2);
+}
+.textArea01 {
+	position: absolute;
+	top: 190px;
+	left: 190px;
+	font-size: 1.25rem;
+}
+.decorateCircle01 {
+	width: 621px;
+	height: 446px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	background: url(../images/web/decorateCircle01.png) no-repeat;
+	pointer-events: none;
+	z-index: 2;
+}
+.mod_corner01 {
+	position: absolute;
+	top: -22px;
+	left: -23px;
+	width: 81px;
+	height: 81px;
+	background: url(../images/web/decorateCorner01.png) no-repeat;
+	pointer-events: none;
+	z-index: 2;
+}
+.mod_corner02 {
+	position: absolute;
+	top: -22px;
+	right: -23px;
+	width: 126px;
+	height: 125px;
+	background: url(../images/web/decorateCorner02.png) no-repeat;
+	pointer-events: none;
+	z-index: 2;
+}
+.mod_corner03 {
+	position: absolute;
+	bottom: -22px;
+	right: -23px;
+	width: 278px;
+	height: 281px;
+	background: url(../images/web/decorateCorner03.png) no-repeat;
+	pointer-events: none;
+	z-index: 2;
+}
+.numSize {
+	font-size: 2.5rem;
+}
+.numSize02 {
+	font-size: 2rem;
+}
+.textSize {
+	padding: 0.5rem;
+}
+/*右边模块区域mod03框*/
+.mod01_title {
+	font-size: 1.3rem;
+	position: absolute;
+	right: 143px;
+	top: -5px;
+}
+/*gis地图按钮样式*/
+.gisBtn {
+	/*****
+	border: 0.08rem solid #4b9ede;
+	border-radius: 0.25rem;
+	padding: 0.2rem 0.8rem;
+	background: linear-gradient(to bottom, #6abdf8 0%, #0267af 49%, #054583 50%, #2887cd 100%);
+	*****/
+	width:400px;
+	height:400px;
+	color:#E6E6FA;
+	cursor: pointer;
+	z-index: 5;
+}
+/*
+.gisBtn:hover {
+	color: #0bffff;
+	background: linear-gradient(to top, #6abdf8 0%, #054583 100%);
+}*/
+/*窗口03样式*/
+.frameStyle01_corner01, .frameStyle01_corner02, .frameStyle01_corner03, .frameStyle01_corner04 {
+	position: absolute;
+	pointer-events: none;
+	width: 170px;
+	height: 170px;
+	background: url(../images/web/frameStyle01.png) no-repeat;
+	z-index: 1;
+}
+.frameStyle01_corner01 {
+	left: 0;
+	top: 0;
+}
+.frameStyle01_corner02 {
+	right: 0;
+	top: 0;
+	background-position: right top;
+}
+.frameStyle01_corner03 {
+	right: 0;
+	bottom: 0;
+	background-position: right bottom;
+}
+.frameStyle01_corner04 {
+	left: 0;
+	bottom: 0;
+	background-position: left bottom;
+}
+/*线的样式*/
+.frameStyle01_line01, .frameStyle01_line02 {
+	position: absolute;
+	pointer-events: none;
+	left: 170px;
+	right: 170px;
+	height: 63px;
+	background: url(../images/web/frameStyle01_x.png) repeat-x;
+	z-index: 1;
+}
+.frameStyle01_line01 {
+	top: 2px;
+}
+.frameStyle01_line02 {
+	bottom: 0;
+}
+.frameStyle01_line03, .frameStyle01_line04 {
+	position: absolute;
+	pointer-events: none;
+	top: 170px;
+	bottom: 170px;
+	width: 63px;
+	background: url(../images/web/frameStyle01_y.png) repeat-y;
+	z-index: 1;
+}
+.frameStyle01_line03 {
+	left: 0;
+}
+.frameStyle01_line04 {
+	right: 0;
+}
+/*frameStyle02窗口样式*/
+.frameStyle02_corner01, .frameStyle02_corner02, .frameStyle02_corner03, .frameStyle02_corner04 {
+	position: absolute;
+	pointer-events: none;
+	width: 350px;
+	height: 350px;
+	background: url(../images/web/frameStyle02.png) no-repeat;
+	z-index: 1;
+}
+.frameStyle02_corner01 {
+	left: 0;
+	top: 0;
+}
+.frameStyle02_corner02 {
+	width: 110px;
+	height: 110px;
+	right: 0;
+	top: 0;
+	background-position: right top;
+}
+.frameStyle02_corner03 {
+	width: 200px;
+	height: 200px;
+	right: 0;
+	bottom: 0;
+	background-position: right bottom;
+}
+.frameStyle02_corner04 {
+	width: 470px;
+	height: 505px;
+	left: 0;
+	bottom: 0;
+	background-position: left bottom;
+}
+/*frameStyle02线的样式开始*/
+.frameStyle02_line01, .frameStyle02_line02 {
+	position: absolute;
+	pointer-events: none;
+	height: 10px;
+	background: url(../images/web/frameStyle02_x.png) repeat-x;
+}
+.frameStyle02_line03, .frameStyle02_line04 {
+	position: absolute;
+	pointer-events: none;
+	width: 10px;
+	background: url(../images/web/frameStyle02_y.png) repeat-y;
+}
+.frameStyle02_line01 {
+	left: 350px;
+	top: 27px;
+	right: 110px;
+}
+.frameStyle02_line02 {
+	bottom: 23px;
+	left: 500px;
+	right: 200px;
+}
+
+.frameStyle02_line03 {
+	top: 350px;
+	left: 29px;
+	bottom: 540px;
+}
+.frameStyle02_line04 {
+	top: 110px;
+	right: 23px;
+	bottom: 170px;
+}
+/*frameStyle02线的样式结束*/
+.dataRow {
+	margin-bottom: 1rem;
+}
+.dataRow li {
+	float: left;
+}
+.dataRow li:not(:first-child) {
+	margin-left: 1rem;
+}
+.groupBtn_l {
+	width: 377px;
+	line-height: 128px;
+	padding: 0 65px 0 30px;
+	box-sizing: border-box;
+	color: #f2d05c;
+	font-size: 36px;
+	text-align: center;
+	background: url(../images/web/groupBtn_l.png) no-repeat center center;
+}
+.groupBtn_r {
+	width: 315px;
+	line-height: 128px;
+	padding: 0 55px;
+	margin-left: -25px;
+	box-sizing: border-box;
+	text-align: center;
+	background: url(../images/web/groupBtn_r.png) no-repeat center center;
+}
+/*module03列表css*/
+.module03_table {
+	padding: 0 3rem;
+	line-height: 3rem;
+}
+.module03_table th {
+	background-color: rgba(93,118,151,0.5);
+	text-shadow: 5px 5px 10px rgba(0,58,130, 0.75);
+}
+.decorate_tr {
+	position: relative;
+	line-height: 5rem;
+	padding: 0 3rem;
+	text-align: center;
+}
+.decorate_tr::before {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	height: 220px;
+	width: 50%;
+	left: 0;
+	bottom: 0;
+	background: url(../images/web/halfFrame01.png) no-repeat left bottom;
+}
+.decorate_tr::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	height: 220px;
+	width: 50%;
+	right: 0;
+	bottom: 0;
+	background: url(../images/web/halfFrame01.png) no-repeat right bottom;
+}
+/*旋转的圆*/
+.sdArea01 {
+	width: 600px;
+	height: 600px;
+}
+.sdArea02 {
+	width: 772px;
+	height: 772px;
+}
+.KB_spinDisc01, .KB_spinDisc02 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	pointer-events: none;
+	background: url( ../images/web/circleBg01.png) no-repeat;
+	animation: spinDisc 8s linear infinite;
+	-webkit-animation: spinDisc 8s linear infinite;
+}
+.sdText01 {
+	line-height: 600px;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.KB_spinDisc02 {
+	background: url( ../images/web/circleBg02.png) no-repeat;
+}
+.sdText02 {
+	line-height: 772px;
+	font-size: 1.7rem;
+	text-align: center;
+}
+@keyframes spinDisc {
+100% {
+ transform: rotate(360deg);
+}
+}
+@-webkit-keyframes spinDisc {
+100% {
+ transform: rotate(360deg);
+}
+}

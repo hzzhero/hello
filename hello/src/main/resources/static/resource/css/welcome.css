@@ -1,0 +1,61 @@
+﻿/* CSS Document */
+@import url( ../font/font01/LCDN.css);
+/*@import url(screenTest.css);*/
+html {
+	font-size: 40px;
+}
+.bgColor {
+	background-color: #0e1b37;
+}
+.welcomeBg01{
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to bottom,#8edcf1 0%,#ecf3f9 100%);  /*渐变背景*/
+}
+.welcomePic_mid{
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1601px;
+	background: url(../images/web/loginBg.png) no-repeat center bottom;
+}
+.welcomePic_logo{
+	position: absolute;
+	pointer-events: none;
+	left: 2rem;
+	top:  2rem;
+	width: 1212px;
+	height: 403px;
+	background: url(../images/web/company_LOGO.png) no-repeat;
+}
+.welcomePic_sun{
+	position: absolute;
+	pointer-events: none;
+	left:0;
+	right: 0;
+	top: 0;
+	height: 4366px;
+	background: url(../images/web/sunPic.png) no-repeat center  -2000px;
+}
+.welcomeText{
+	position: absolute;
+	display: block;
+	left:0;
+	right: 0;
+	top: 30%;
+	font-size: 8rem;
+	line-height: 130%;
+	color: #066e5e;
+	text-align: center;
+	text-shadow:0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3); 
+}
+.welcomeText:hover{
+	color: #5c1863;
+	cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Base logback configuration provided for compatibility with Spring Boot 1.1
+-->
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </encoder>
+        <!--不知怎么老是说G:/hello.log不存在？-->
+        <!--<file>${LOG_FILE:-/G:/hello.log}</file>-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>14</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <!--将日志收集发送到kafka  rsyslog的appender-->
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
+
+<!--<included>-->
+    <!--<include resource="org/springframework/boot/logging/logback/defaults.xml" />-->
+    <!--<property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/spring.log}"/>-->
+    <!--<include resource="org/springframework/boot/logging/logback/console-appender.xml" />-->
+    <!--<include resource="org/springframework/boot/logging/logback/file-appender.xml" />-->
+    <!--<root level="INFO">-->
+        <!--<appender-ref ref="CONSOLE" />-->
+        <!--<appender-ref ref="FILE" />-->
+    <!--</root>-->
+<!--</included>-->

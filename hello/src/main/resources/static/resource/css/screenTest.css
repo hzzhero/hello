@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*PC端调试用CSS*/
+@media all and (min-width: 1367px) and (max-width: 1920px) {
+html {
+	font-size: 12px;
+}
+.decoratePic_left01, .decoratePic_left02, .decoratePic_left03, .decoratePic_right01, .decoratePic_right02, .decoratePic_right03 {
+	zoom: 0.18;
+}
+.decoratePic_bottom {
+	zoom: 0.2;
+}
+.leftBar, .rightBar {
+	zoom: 0.23;
+}
+.map_area {
+	zoom: 0.2;
+}
+}

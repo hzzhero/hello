@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>demo</title>
+</head>
+<body>
+
+<!--  	<h1 th:text="${name}">232323</h1>
+	<h1 th:text="${#numbers.formatDecimal(num, 1, 2)}">232323</h1>
+	<h1 th:text="${#dates.format(time, 'yyyy-MM-dd')}">435453</h1>
+-->
+
+	 <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>time</th>
+                <th>num</th>
+            </tr>
+        </thead>
+        <tbody th:remove="all-but-first">
+            <tr th:each="test : ${list}">
+                <td th:text="${test.id}">Red chair</td>
+                <td th:text="${test.name}">￥350</td>
+                <td th:text="${#dates.format(test.time, 'yyyy-MM-dd HH:mm:ss')}">2018-02-20</td>
+            	 <td th:text="${'￥' + #numbers.formatDecimal(test.num, 1, 2)}">2018-02-20</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
